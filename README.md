@@ -11,11 +11,12 @@
 
 <div align="center">
   
-[![Email](https://img.shields.io/badge/Email-benzyeh%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:benzyeh@gmail.com)
+[![Email](https://img.shields.io/badge/Email-spyeh26%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:spyeh26@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-benyeh26-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/benyeh26/)
 [![Personal Website](https://img.shields.io/badge/Website-Portfolio-9cf?style=flat-square&logo=vercel)](https://my-web-gules.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Ben0126-black?style=flat-square&logo=github)](https://github.com/Ben0126)
 [![Phone](https://img.shields.io/badge/Phone-(+886)932--776--126-green?style=flat-square&logo=whatsapp)](tel:+886932776126)
+[![Phone](https://img.shields.io/badge/Phone-(+1)541--250--2269-green?style=flat-square&logo=whatsapp)](tel:+15412502269)
 
 </div>
 
@@ -24,7 +25,7 @@
 I'm an engineer specialized in drone systems development, reinforcement learning, and intelligent applications from Taiwan 🇹🇼.
 
 - 🎓 Bachelor's degree in **Department of Green Energy and Information Technology** from **National Taitung University**
-- 🎓 **Upcoming**: Master's in **Electrical and Computer Engineering** at **Oregon State University** (Starting September 2025)
+- 🎓 **Now**: Master's in **Electrical and Computer Engineering** at **Oregon State University** 
 - 💼 Worked as an Engineer Intern at **Electronic and Optoelectronic System Research Lab** at **Industrial Technology Research Institute (ITRI)**
 - 🚁 Specialized in **drone control**, **reinforcement learning**, and **intelligent system integration**
 - 🔍 Exploring AI applications in autonomous systems, particularly deploying reinforcement learning in practical hardware
@@ -49,15 +50,6 @@ Order processing and production management system for manufacturing industries, 
 - 🛠️ **Tech Stack**: Django REST Framework, React, PostgreSQL
 - 🚩 **Status**: In Development
 - 📋 [API Documentation](https://github.com/Ben0126/factory-erp/tree/main/ERP)
-
-### 🏎️ F1-Style Autonomous Racing
-> Reinforcement Learning with Racing Simulator
-
-Training autonomous driving systems using reinforcement learning to find optimal racing lines and execute dynamic overtaking strategies.
-
-- 🛠️ **Tech Stack**: Python, PyTorch, ROS2, Reinforcement Learning (PPO algorithm)
-- 🚩 **Status**: Research Phase
-- 🎯 **Goal**: Develop models deployable on actual small-scale racing vehicles
 
 ## 💻 Technical Skills
 
@@ -182,9 +174,10 @@ Training autonomous driving systems using reinforcement learning to find optimal
 
 Feel free to reach out to me through:
 
-- 📧 Email: [benzyeh@gmail.com](mailto:benzyeh@gmail.com)
+- 📧 Email: [spyeh26@gmail.com](mailto:spyeh26@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/benyeh26](https://www.linkedin.com/in/benyeh26/)
-- 📱 Phone: [(+886)932-776-126](tel:+886932776126)
+- 📱 TW Phone: [(+886)932-776-126](tel:+886932776126)
+- 📱 US Phone: [(+1)541-250-2269](tel:+15412502269)
 - 🌐 Personal Website: [https://my-web-gules.vercel.app/](https://my-web-gules.vercel.app/)
 
 ---
