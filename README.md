@@ -25,7 +25,7 @@
 I'm an engineer specialized in drone systems development, reinforcement learning, and intelligent applications from Taiwan 🇹🇼.
 
 - 🎓 Bachelor's degree in **Department of Green Energy and Information Technology** from **National Taitung University**
-- 🎓 **Now**: Master's in **Electrical and Computer Engineering** at **Oregon State University** 
+- 🎓 **Now**: Master's in **Electrical and Computer Engineering** at **Oregon State University** (Expected Graduation 2027)
 - 💼 Worked as an Engineer Intern at **Electronic and Optoelectronic System Research Lab** at **Industrial Technology Research Institute (ITRI)**
 - 🚁 Specialized in **drone control**, **reinforcement learning**, and **intelligent system integration**
 - 🔍 Exploring AI applications in autonomous systems, particularly deploying reinforcement learning in practical hardware
@@ -50,6 +50,30 @@ Order processing and production management system for manufacturing industries, 
 - 🛠️ **Tech Stack**: Django REST Framework, React, PostgreSQL
 - 🚩 **Status**: In Development
 - 📋 [API Documentation](https://github.com/Ben0126/factory-erp/tree/main/ERP)
+
+### 🏎️ F1 Style Autonomous Racing Car
+> Reinforcement Learning with Racing Simulator
+
+Using Reinforcement Learning to train an autonomous driving system to find the optimal path on a racetrack and execute dynamic overtaking strategies.
+
+- 🛠️ **Tech Stack**: Python, PyTorch, ROS2, Reinforcement Learning (PPO Algorithm)
+- 🚩 **Status**: Research Phase
+- 🎯 **Goal**: Develop a model deployable on actual small-scale racing cars
+
+### 🌐 Other Small Projects
+
+- ⌨️ **English Typing and Listening Practice**
+  > A web application designed to improve English typing speed and listening comprehension.
+  - 🔗 [Go to App](https://ben0126.github.io/english_typing_practice/)
+
+- ☕ **Corvallis Coffee Shop and Restaurant Map**
+  > An interactive recommendation map for coffee shops and restaurants specifically for the Corvallis area.
+  - 🔗 [Go to App](https://ben0126.github.io/corvallis-coffee-map/)
+
+- 💰 **Bookkeeping Website (App)**
+  > A simple and practical personal bookkeeping application.
+  - 🔗 [Go to App](https://bookkeeping-app-three.vercel.app/)
+
 
 ## 💻 Technical Skills
 
