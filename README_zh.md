@@ -11,11 +11,12 @@
 
 <div align="center">
   
-[![Email](https://img.shields.io/badge/Email-benzyeh%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:benzyeh@gmail.com)
+[![Email](https://img.shields.io/badge/Email-spyeh26%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:spyeh26@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-benyeh26-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/benyeh26/)
 [![個人網站](https://img.shields.io/badge/網站-作品集-9cf?style=flat-square&logo=vercel)](https://my-web-gules.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Ben0126-black?style=flat-square&logo=github)](https://github.com/Ben0126)
 [![電話](https://img.shields.io/badge/電話-(+886)932--776--126-green?style=flat-square&logo=whatsapp)](tel:+886932776126)
+[![電話](https://img.shields.io/badge/電話-(+1)541--250--2269-green?style=flat-square&logo=whatsapp)](tel:+15412502269)
 
 </div>
 
@@ -24,7 +25,7 @@
 我是一名專注於無人機系統開發、強化學習與智慧應用的工程師，來自台灣🇹🇼。
 
 - 🎓 **國立台東大學** 綠能與資訊科技學系畢業
-- 🎓 **即將就讀**: **奧勒岡州立大學** 電機與計算機工程 碩士學位 (2025年9月入學)
+- 🎓 **現正就讀**: **奧勒岡州立大學** 電機與計算機工程 碩士學位 (預計2027年畢業)
 - 💼 在 **工業技術研究院 (ITRI)** 光電系統研究所擔任過工程師實習生
 - 🚁 專長領域包括**無人機控制**、**強化學習**與**智慧系統整合**
 - 🔍 正在探索 AI 在自主系統中的應用，特別是強化學習在實際硬體上的部署
@@ -58,6 +59,21 @@
 - 🛠️ **技術棧**: Python, PyTorch, ROS2, 強化學習 (PPO算法)
 - 🚩 **狀態**: 研究階段
 - 🎯 **目標**: 開發能夠在實際小型賽車上部署的自動駕駛模型
+
+### 🌐 其他小型專案 (Other Small Projects)
+
+- ⌨️ **英文打字以及聽力練習**
+  > 一個用於提升英文打字速度和聽力理解的網頁應用。
+  - 🔗 [前往應用](https://ben0126.github.io/english_typing_practice/)
+
+- ☕ **Corvallis 咖啡廳及餐廳推薦地圖**
+  > 專為 Corvallis 地區設計的咖啡廳和餐廳互動式推薦地圖。
+  - 🔗 [前往應用](https://ben0126.github.io/corvallis-coffee-map/)
+
+- 💰 **記帳網站 (APP)**
+  > 一個簡單實用的個人記帳應用程式。
+  - 🔗 [前往應用](https://bookkeeping-app-three.vercel.app/)
+
 
 ## 💻 技術專長
 
@@ -124,7 +140,6 @@
 ## 📊 開發者檔案
 
 <div align="center">
-  <!-- 貢獻連續統計 - 顯示持續活動 -->
   <a href="https://github.com/Ben0126">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ben0126&theme=tokyonight" alt="GitHub 連續貢獻" />
   </a>
@@ -183,9 +198,10 @@
 
 歡迎透過以下方式與我聯繫：
 
-- 📧 Email: [benzyeh@gmail.com](mailto:benzyeh@gmail.com)
+- 📧 Email: [spyeh26@gmail.com](mailto:spyeh26@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/benyeh26](https://www.linkedin.com/in/benyeh26/)
-- 📱 Phone: [(+886)932-776-126](tel:+886932776126)
+- 📱 TW Phone: [(+886)932-776-126](tel:+886932776126)
+- 📱 US Phone: [(+1)541-250-2269](tel:+15412502269)
 - 🌐 個人網站: [https://my-web-gules.vercel.app/](https://my-web-gules.vercel.app/)
 
 ---
