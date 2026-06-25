@@ -30,6 +30,16 @@
 - 🚁 專長領域包括**無人機控制**、**強化學習**與**智慧系統整合**
 - 🔍 尋求2026年暑期研究助理或實驗室志工職位，期望貢獻於自主飛行器、機器人學與強化學習的研發工作
 
+## 📊 數據亮點
+
+<div align="center">
+
+| 🎯 **`< 0.2 m`** | ⚡ **`32%`** | 👥 **`34+`** | 📚 **`4`** |
+|:---:|:---:|:---:|:---:|
+| 位置估算誤差 (非 GPS) | PSO 路徑規劃效率提升 | 指導學生人數 | 學術發表 |
+
+</div>
+
 ## 🔭 目前專案
 
 ### 🚁 Vision-DPPO
@@ -90,14 +100,16 @@
   <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </div>
 
 ### 專業領域
 - 🚁 **機器人學與控制** - 無人機飛行控制、位置估算、障礙物避開、SLAM、感測器融合
-- 🤖 **人工智慧** - 強化學習 (PPO, DDPG, Actor-Critic)、元啟發式演算法 (PSO, GA)
-- 🔧 **框架與工具** - ROS / ROS 2, PX4, PyTorch, Cartographer, CUDA, OpenCV
+- 🤖 **人工智慧** - 強化學習 (PPO, DDPG, Actor-Critic)、**Diffusion Policy**、元啟發式演算法 (PSO, GA)
+- 🔧 **框架與工具** - ROS / ROS 2, PX4, PyTorch, Cartographer, CUDA, OpenCV, React, Django REST, Flutter, PostgreSQL, Git, Linux
 - 📊 **數據分析** - 實驗設計、統計分析、視覺化
 
 ## 🔬 研究與工作經歷
@@ -155,7 +167,7 @@
 
 <div align="center">
 
-  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,flutter,django,postgres,git&perline=3" alt="技能圖示" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,flutter,django,react,postgres,git,linux&perline=3" alt="技能圖示" />
 </div>
 
 <br>

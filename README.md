@@ -30,6 +30,16 @@ Highly motivated M.S. Electrical and Computer Engineering student at Oregon Stat
 - 🚁 Specialized in **drone control**, **reinforcement learning**, and **intelligent system integration**
 - 🔍 Seeking a Graduate Research Assistant or lab volunteer position for Summer 2026, eager to contribute to R&D in autonomous aerial vehicles, robotics and reinforcement learning
 
+## 📊 By the Numbers
+
+<div align="center">
+
+| 🎯 **`< 0.2 m`** | ⚡ **`32%`** | 👥 **`34+`** | 📚 **`4`** |
+|:---:|:---:|:---:|:---:|
+| Position Error (non-GPS) | Faster PSO Path Planning | Students Mentored | Publications |
+
+</div>
+
 ## 🔭 Current Projects
 
 ### 🚁 Vision-DPPO
@@ -90,14 +100,16 @@ Order processing and production management system for manufacturing industries, 
   <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </div>
 
 ### Domains of Expertise
 - 🚁 **Robotics & Control** - Drone Flight Control, Position Estimation, Obstacle Avoidance, SLAM, Sensor Fusion
-- 🤖 **Artificial Intelligence** - Reinforcement Learning (PPO, DDPG, Actor-Critic), Metaheuristic Algorithms (PSO, GA)
-- 🔧 **Frameworks & Tools** - ROS / ROS 2, PX4, PyTorch, Cartographer, CUDA, OpenCV
+- 🤖 **Artificial Intelligence** - Reinforcement Learning (PPO, DDPG, Actor-Critic), **Diffusion Policy**, Metaheuristic Algorithms (PSO, GA)
+- 🔧 **Frameworks & Tools** - ROS / ROS 2, PX4, PyTorch, Cartographer, CUDA, OpenCV, React, Django REST, Flutter, PostgreSQL, Git, Linux
 - 📊 **Data Analysis** - Experimental Design, Statistical Analysis, Visualization
 
 ## 🔬 Research & Experience
@@ -156,7 +168,7 @@ Order processing and production management system for manufacturing industries, 
 
 <div align="center">
 
-  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,flutter,django,postgres,git&perline=3" alt="Skills" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,flutter,django,react,postgres,git,linux&perline=3" alt="Skills" />
 </div>
 
 <br>
