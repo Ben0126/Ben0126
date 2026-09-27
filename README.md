@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=0C8AF7&center=true&vCenter=true&width=435&lines=AI+%26+Robotics+Engineer;Drone+Control+Specialist;Reinforcement+Learning+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=0C8AF7&center=true&vCenter=true&width=460&lines=Robotics+Software+Engineer;Multi-Drone+Autonomy+(PX4%2C+ROS+2);Reinforcement+Learning+%26+Control" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -21,105 +21,36 @@
 
 ## 🌱 About Me
 
-Highly motivated M.S. Electrical and Computer Engineering student at Oregon State University with a strong foundation in robotics, autonomous navigation, and intelligent control systems. Hands-on experience at ITRI developing non-GPS drone stabilization systems and implementing SLAM/Cartographer. Proven ability to integrate hardware (lidar, depth cameras) with advanced AI models (PPO, Actor-Critic).
+M.Eng. Electrical and Computer Engineering student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. At ITRI, I built a drone-swarm collision-avoidance system and took it from Gazebo simulation to a 10-drone flight test (PX4, ROS 2).
 
-- 🎓 **Now**: M.S. in **Electrical and Computer Engineering** at **Oregon State University** (Expected Jun 2028)
-  - Currently enrolled in Academic English/Pre-Master's preparation. Expected to matriculate into the formal M.S. program in Fall 2026
+- 🎓 **Now**: M.Eng. in **Electrical and Computer Engineering** at **Oregon State University** (Expected Mar 2028)
 - 🎓 B.S. in **Green Energy and Information Technology** from **National Taitung University** (GPA: 3.3/4.0)
-- 💼 Worked as an Engineer Intern at **Electronic and Optoelectronic System Research Lab** at **Industrial Technology Research Institute (ITRI)**
-- 🚁 Specialized in **drone control**, **reinforcement learning**, and **intelligent system integration**
-- 🔍 Seeking a Graduate Research Assistant or lab volunteer position for Summer 2026, eager to contribute to R&D in autonomous aerial vehicles, robotics and reinforcement learning
+- 💼 Robotics Software Engineering Intern at **ITRI – Information and Communications Research Laboratories** (2026)
+- 💼 Engineer Intern at **ITRI – Electronic and Optoelectronic System Research Lab** (2023–2024)
+- 🔍 **Seeking a Summer 2027 internship in Robotics Software or Autonomy**
 
 ## 📊 By the Numbers
 
 <div align="center">
 
-| 🎯 **`< 0.2 m`** | ⚡ **`32%`** | 👥 **`34+`** | 📚 **`4`** |
+| 🚁 **`50`** | ✈️ **`10`** | 🛡️ **`100%`** | 📚 **`4`** |
 |:---:|:---:|:---:|:---:|
-| Position Error (non-GPS) | Faster PSO Path Planning | Students Mentored | Publications |
+| Drones in SITL Swarm Validation | Drones in Physical Flight Test | Collision-Free Test Scenarios | Publications |
 
 </div>
 
-## 🔭 Current Projects
+## 🔬 Experience
 
-### 🚁 Vision-DPPO
-> End-to-End Drone Control via Diffusion Policy
-
-Architected an end-to-end visuomotor control framework replacing cascaded PID with a Diffusion Policy, designed to map raw FPV image sequences directly to 4D motor thrusts via a CNN encoder and Conditional 1D U-Net.
-
-- 🛠️ **Tech Stack**: Python, PyTorch, ROS 2, CUDA
-- 🚩 **Status**: Ongoing Research (Feb 2026 ~ Present)
-- 🎯 **Goal**: Prototyped core software infrastructure including a custom 6-DOF quadrotor simulation (RK4 integration at 200Hz), state-based PPO expert, and HDF5 synthetic data collection pipeline
-
-### 🍽️ FoodFate
-> Intelligent Random Restaurant Recommendation App
-
-Solving the "what to eat today" dilemma! Helps users quickly decide where to eat through personalized filtering, a fun roulette interface, and all-in-one action features.
-
-- 🛠️ **Tech Stack**: Flutter, Python Flask, PostgreSQL, Google Maps API
-- 🚩 **Status**: Active Development (MVP Stage)
-- 📋 [Project Details](https://github.com/Ben0126/food_fate)
-
-### 🏭 Factory ERP System
-> Order and Production Management System
-
-Order processing and production management system for manufacturing industries, featuring customer management, product tracking, and material procurement. Designed to digitize manufacturing workflows, replacing legacy Excel-based operations.
-
-- 🛠️ **Tech Stack**: Django REST Framework, React, PostgreSQL
-- 🚩 **Status**: In Development
-- 📋 [API Documentation](https://github.com/Ben0126/factory-erp/tree/main/ERP)
-
-### 🌐 Other Small Projects
-
-- ⌨️ **English Typing and Listening Practice**
-  > A web application designed to improve English typing speed and listening comprehension.
-  - 🔗 [Go to App](https://ben0126.github.io/english_typing_practice/)
-
-- ☕ **Corvallis Coffee Shop and Restaurant Map**
-  > An interactive recommendation map for coffee shops and restaurants specifically for the Corvallis area.
-  - 🔗 [Go to App](https://ben0126.github.io/corvallis-coffee-map/)
-
-- 💰 **Bookkeeping Website (App)**
-  > A simple and practical personal bookkeeping application.
-  - 🔗 [Go to App](https://bookkeeping-app-three.vercel.app/)
-
-
-## 💻 Technical Skills
-
-### Programming & Tools
-<div>
-  <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/-MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/-ROS%20/%20ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white" />
-  <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
-  <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-</div>
-
-### Domains of Expertise
-- 🚁 **Robotics & Control** - Drone Flight Control, Position Estimation, Obstacle Avoidance, SLAM, Sensor Fusion
-- 🤖 **Artificial Intelligence** - Reinforcement Learning (PPO, DDPG, Actor-Critic), **Diffusion Policy**, Metaheuristic Algorithms (PSO, GA)
-- 🔧 **Frameworks & Tools** - ROS / ROS 2, PX4, PyTorch, Cartographer, CUDA, OpenCV, React, Django REST, Flutter, PostgreSQL, Git, Linux
-- 📊 **Data Analysis** - Experimental Design, Statistical Analysis, Visualization
-
-## 🔬 Research & Experience
+### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
+**Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
+- Owned end-to-end development of a collision-avoidance system for a centralized drone swarm (PX4, ROS 2), designing a new APF-based algorithm that holds formation while avoiding collisions
+- Validated in Gazebo PX4 SITL with up to 50 drones, avoiding collisions in 100% of test scenarios within the defined operating conditions
+- Took the system from simulation to a 10-drone physical flight test
 
 ### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab
 **Engineer Intern** _(Nov 2023 - Aug 2024)_
-- Developed a drone stabilization control system for non-GPS environments, reducing position estimation errors to under 0.2 meters
-- Integrated flight controller, onboard computer, and depth camera to create a unified control system, autonomously managing flight paths and reducing GPS dependency
-- Enhanced drone tracking capabilities by integrating computer vision and trained algorithms for the following target
-- Implemented SLAM and Cartographer for mapping and localization in complex indoor environments
+- Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) using visual-inertial odometry (VIO) for position hold
+- Tested and debugged a vision-based follow-me feature in which the drone autonomously tracks an operator-selected target; ran flight tests and reported issues to the perception team
 
 ### 🏫 National Taitung University | Intelligent Energy Management Lab
 **Research Assistant** _(Aug 2023 - Feb 2024)_
@@ -136,6 +67,74 @@ Order processing and production management system for manufacturing industries, 
 **Research Assistant** _(Jul 2021 - Dec 2021)_
 - Investigated GA-PID, Fuzzy Logic, and PID control methods in drone controllers, culminating in a conference paper publication: "Impact of control strategies on altitude control in indoor quadcopter"
 - Assisted professor in writing research proposals for MOST Research Project, focusing on drone control and obstacle avoidance technologies, while also mentoring lab members in drone assembly, maintenance, and applying technical knowledge
+
+## 🔭 Projects
+
+### 🚁 Vision-DPPO
+> End-to-End Drone Control via Diffusion Policy
+
+Designed an end-to-end visuomotor control framework replacing cascaded PID with a Diffusion Policy, mapping raw FPV image sequences directly to 4D motor thrusts via a CNN encoder and Conditional 1D U-Net.
+
+- 🛠️ **Tech Stack**: Python, PyTorch, CNN, PPO
+- 🗓️ **Timeline**: Feb 2026 - Jun 2026
+- ⚙️ **Built**: Custom 6-DOF quadrotor simulation (RK4 integration at 200Hz), state-based PPO expert, and an HDF5 synthetic data collection pipeline
+
+### 🏭 Factory ERP System
+> Production ERP for a Manufacturer
+
+Deployed a production ERP that replaced a manufacturer's MS Access system with one quote-to-shipment workflow, used by management and 4 shop-floor stations.
+
+- 🛠️ **Tech Stack**: Django REST Framework, React, PostgreSQL
+- 🚩 **Status**: In Production
+- 📋 [API Documentation](https://github.com/Ben0126/factory-erp/tree/main/ERP)
+
+### 🍽️ FoodFate
+> Restaurant Recommendation App
+
+Built a restaurant recommendation app with personalized filtering, a roulette-style random picker, and Google Maps integration.
+
+- 🛠️ **Tech Stack**: Flutter, Python Flask, PostgreSQL, Google Maps API
+- 📋 [Project Details](https://github.com/Ben0126/food_fate)
+
+### 🌐 Other Small Projects
+
+- ⌨️ **English Typing and Listening Practice**
+  > A web application designed to improve English typing speed and listening comprehension.
+  - 🔗 [Go to App](https://ben0126.github.io/english_typing_practice/)
+
+- ☕ **Corvallis Coffee Shop and Restaurant Map**
+  > An interactive recommendation map for coffee shops and restaurants specifically for the Corvallis area.
+  - 🔗 [Go to App](https://ben0126.github.io/corvallis-coffee-map/)
+
+- 💰 **Bookkeeping Website (App)**
+  > A simple and practical personal bookkeeping application.
+  - 🔗 [Go to App](https://bookkeeping-app-three.vercel.app/)
+
+## 💻 Technical Skills
+
+### Programming & Tools
+<div>
+  <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/-MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ROS%20/%20ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white" />
+  <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+</div>
+
+### Domains of Expertise
+- 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
+- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), **Diffusion Policy**, PyTorch, CUDA, OpenCV, Metaheuristic Algorithms (PSO, GA)
+- 🔧 **Software** - Python, C++, MATLAB, Git, Linux, Django, React, Flutter, PostgreSQL
 
 ## 📚 Publications
 
@@ -164,44 +163,9 @@ Order processing and production management system for manufacturing industries, 
   </a>
 </div>
 
-### 🧠 Technical Skills Distribution
-
 <div align="center">
 
-  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,flutter,django,react,postgres,git,linux&perline=3" alt="Skills" />
-</div>
-
-<br>
-
-<div align="center">
-  <table>
-    <tr>
-      <td valign="top" width="50%">
-        <h3 align="center">Programming Languages</h3>
-        <div align="center">
-          <img src="https://img.shields.io/badge/Python-90%25-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-          <img src="https://img.shields.io/badge/C++-85%25-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-          <img src="https://img.shields.io/badge/MATLAB-80%25-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-        </div>
-      </td>
-      <td valign="top" width="50%">
-        <h3 align="center">Frameworks & Technologies</h3>
-        <div align="center">
-          <img src="https://img.shields.io/badge/ROS%20/%20ROS%202-85%25-22314E?style=for-the-badge&logo=ros&logoColor=white" />
-          <img src="https://img.shields.io/badge/PyTorch-80%25-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-          <img src="https://img.shields.io/badge/Flutter-75%25-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
-
-### 🌟 Development Focus Areas
-<div align="center">
-  <img src="https://img.shields.io/badge/Drone%20Control-40%25-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Reinforcement%20Learning-25%25-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Full--Stack%20Development-20%25-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Computer%20Vision-15%25-orange?style=for-the-badge" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,matlab,pytorch,ros,django,react,flutter,postgres,git,linux&perline=6" alt="Skills" />
 </div>
 
 <details>
@@ -214,7 +178,7 @@ Order processing and production management system for manufacturing industries, 
 
 ## 🔗 Contact Me
 
-Feel free to reach out to me through:
+Open to Summer 2027 internship opportunities in robotics software and autonomy. Feel free to reach out:
 
 - 📧 Email: [spyeh26@gmail.com](mailto:spyeh26@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/benyeh26](https://www.linkedin.com/in/benyeh26/)
