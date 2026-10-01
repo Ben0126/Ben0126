@@ -48,7 +48,7 @@
 ### 👨‍💻 工業技術研究院 (ITRI) | 電子與光電系統研究所
 **工程師實習生** _(2023 年 11 月 - 2024 年 8 月)_
 - 以 C/C++ 與 ROS 整合並維護無 GPS 環境的四旋翼平台 (飛控、機載電腦、深度相機)，使用視覺慣性里程計 (VIO) 進行定點懸停。
-- 測試並除錯視覺跟隨 (follow-me) 功能，讓無人機自主追蹤操作者選定的目標；執行飛行測試並回報問題給感知團隊。
+- 除錯視覺跟隨 (follow-me) 功能在追蹤模型、ROS 與飛控之間的串接：於飛行測試中找出模型輸出正確、但無人機沒有動作或動作幅度錯誤的失效情況，並調整反應。
 
 ### 🏫 國立臺東大學 | 智慧能源管理實驗室
 **研究助理** _(2023 年 8 月 - 2024 年 2 月)_
@@ -118,7 +118,6 @@
   <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
@@ -130,7 +129,7 @@
 
 ### 專業領域
 - 🚁 **機器人** - ROS 2 / ROS、PX4、Gazebo SITL、視覺慣性里程計 (VIO)、群體避碰 (APF)、飛行測試
-- 🤖 **AI / 機器學習** - 強化學習 (PPO, DDPG)、Diffusion Policy、PyTorch、CUDA、OpenCV、Actor-Critic、PSO / GA (metaheuristics)
+- 🤖 **AI / 機器學習** - 強化學習 (PPO, DDPG)、Diffusion Policy、PyTorch、OpenCV、Actor-Critic、PSO / GA (metaheuristics)
 - 🔧 **軟體** - C++、C、Python、MATLAB、SQL (PostgreSQL)、Git、Linux、Django、React、Flutter、TypeScript、JavaScript、Kotlin
 
 ## 📚 論文發表

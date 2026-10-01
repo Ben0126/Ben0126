@@ -48,7 +48,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab.
 **Engineer Intern** _(Nov 2023 - Aug 2024)_
 - Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) in C/C++ and ROS, using visual-inertial odometry (VIO) for position hold.
-- Tested and debugged a vision-based follow-me feature in which the drone autonomously tracks an operator-selected target; ran flight tests and reported issues to the perception team.
+- Debugged a vision-based follow-me feature across the tracking model, ROS, and the flight controller: in flight tests, isolated failure cases where the model's output was correct but the drone did not move or moved with the wrong magnitude, and tuned the response.
 
 ### 🏫 National Taitung University | Intelligent Energy Management Lab
 **Research Assistant** _(Aug 2023 - Feb 2024)_
@@ -118,7 +118,6 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
   <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
@@ -130,7 +129,7 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 
 ### Domains of Expertise
 - 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
-- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), Diffusion Policy, PyTorch, CUDA, OpenCV, Actor-Critic, PSO / GA (metaheuristics)
+- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), Diffusion Policy, PyTorch, OpenCV, Actor-Critic, PSO / GA (metaheuristics)
 - 🔧 **Software** - C++, C, Python, MATLAB, SQL (PostgreSQL), Git, Linux, Django, React, Flutter, TypeScript, JavaScript, Kotlin
 
 ## 📚 Publications
