@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="35" height="35" /> Hello, I'm Shun-Pin Yeh (Ben)
+# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="35" height="35" /> Hello, I'm Shun-Pin (Ben) Yeh
 
 <div align="center">
   <a href="README.md">🇺🇸 English</a> |
@@ -15,19 +15,17 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-benyeh26-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/benyeh26/)
 [![Personal Website](https://img.shields.io/badge/Website-Portfolio-9cf?style=flat-square&logo=vercel)](https://my-web-gules.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Ben0126-black?style=flat-square&logo=github)](https://github.com/Ben0126)
-[![Phone](https://img.shields.io/badge/Phone-(+1)541--250--2269-green?style=flat-square&logo=whatsapp)](tel:+15412502269)
 
 </div>
 
 ## 🌱 About Me
 
-M.Eng. Electrical and Computer Engineering student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. At ITRI, I built a drone-swarm collision-avoidance system and took it from Gazebo simulation to a 10-drone flight test (PX4, ROS 2).
+M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Built a drone-swarm collision-avoidance system at ITRI, from Gazebo simulation to a 10-drone flight test (C++, ROS 2, PX4). Seeking a Summer 2027 internship in Robotics Software or Autonomy.
 
-- 🎓 **Now**: M.Eng. in **Electrical and Computer Engineering** at **Oregon State University** (Expected Mar 2028)
-- 🎓 B.S. in **Green Energy and Information Technology** from **National Taitung University** (GPA: 3.3/4.0)
-- 💼 Robotics Software Engineering Intern at **ITRI – Information and Communications Research Laboratories** (2026)
-- 💼 Engineer Intern at **ITRI – Electronic and Optoelectronic System Research Lab** (2023–2024)
-- 🔍 **Seeking a Summer 2027 internship in Robotics Software or Autonomy**
+- 🎓 **Now**: Master of Engineering in Electrical and Computer Engineering, **Oregon State University** (Expected Mar 2028)
+- 🎓 Bachelor of Science in Green Energy and Information Technology, **National Taitung University** (Sep 2020 - Jun 2024) · GPA: 3.3/4.0 | Graduated with College Student Research Scholarship
+- 💼 Robotics Software Engineering Intern, **Industrial Technology Research Institute (ITRI)** – Information and Communications Research Laboratories (2026)
+- 💼 Engineer Intern, **Industrial Technology Research Institute (ITRI)** – Electronic and Optoelectronic System Research Lab. (2023–2024)
 
 ## 📊 By the Numbers
 
@@ -43,71 +41,70 @@ M.Eng. Electrical and Computer Engineering student at Oregon State University fo
 
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
-- Owned end-to-end development of a collision-avoidance system for a centralized drone swarm (PX4, ROS 2), designing a new APF-based algorithm that holds formation while avoiding collisions
-- Validated in Gazebo PX4 SITL with up to 50 drones, avoiding collisions in 100% of test scenarios within the defined operating conditions
-- Took the system from simulation to a 10-drone physical flight test
+- Owned end-to-end development of a collision-avoidance system for a centralized drone swarm in C++ (ROS 2, PX4), designing a new APF-based algorithm that holds formation while avoiding collisions.
+- Validated in Gazebo PX4 SITL with up to 50 drones, avoiding collisions in 100% of test scenarios within the defined operating conditions.
+- Took the system from simulation to a 10-drone physical flight test.
 
-### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab
+### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab.
 **Engineer Intern** _(Nov 2023 - Aug 2024)_
-- Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) using visual-inertial odometry (VIO) for position hold
-- Tested and debugged a vision-based follow-me feature in which the drone autonomously tracks an operator-selected target; ran flight tests and reported issues to the perception team
+- Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) in C/C++ and ROS, using visual-inertial odometry (VIO) for position hold.
+- Tested and debugged a vision-based follow-me feature in which the drone autonomously tracks an operator-selected target; ran flight tests and reported issues to the perception team.
 
 ### 🏫 National Taitung University | Intelligent Energy Management Lab
 **Research Assistant** _(Aug 2023 - Feb 2024)_
-- Mentored 4 new lab members on Metaheuristic Algorithms, enhancing their problem-solving and implementation skills
-- Optimized Particle Swarm Optimization (PSO) algorithm for 3D path planning, achieving a 32% improvement in computational efficiency
-- Conducted experiments and data analysis, contributing to academic publications in intelligent energy management
+- Mentored 4 new lab members on metaheuristic algorithms.
+- Optimized a Particle Swarm Optimization (PSO) algorithm for 3D path planning, improving computational efficiency by 32%.
+- Ran experiments and data analysis contributing to publications in intelligent energy management.
 
 ### 🏫 National Taitung University | Intelligent Green Technology Control Course
 **Teaching Assistant** _(Feb 2022 - Jun 2022)_
-- Guided over 34 students to complete drone control projects, teaching MATLAB programming and Tello drone control techniques
-- Introduced students to cutting-edge drone principles and swarm flight concepts, inspiring innovative project designs
+- Guided 34+ students through drone control projects, teaching MATLAB and Tello drone control.
+- Introduced drone principles and swarm flight concepts to inspire student project designs.
 
 ### 🏫 National Taitung University | Intelligent Control Lab
 **Research Assistant** _(Jul 2021 - Dec 2021)_
-- Investigated GA-PID, Fuzzy Logic, and PID control methods in drone controllers, culminating in a conference paper publication: "Impact of control strategies on altitude control in indoor quadcopter"
-- Assisted professor in writing research proposals for MOST Research Project, focusing on drone control and obstacle avoidance technologies, while also mentoring lab members in drone assembly, maintenance, and applying technical knowledge
+- Investigated GA-PID, fuzzy logic, and PID control for drone controllers, leading to a conference paper on indoor quadcopter altitude control.
+- Assisted with MOST research proposals on drone control and obstacle avoidance; mentored lab members in drone assembly and maintenance.
 
 ## 🔭 Projects
 
 ### 🚁 Vision-DPPO
 > End-to-End Drone Control via Diffusion Policy
 
-Designed an end-to-end visuomotor control framework replacing cascaded PID with a Diffusion Policy, mapping raw FPV image sequences directly to 4D motor thrusts via a CNN encoder and Conditional 1D U-Net.
+Designed an end-to-end visuomotor control framework replacing cascaded PID with a Diffusion Policy, mapping raw FPV image sequences directly to 4D motor thrusts via a CNN encoder and Conditional 1D U-Net. Prototyped the core software infrastructure in Python and PyTorch, including a custom 6-DOF quadrotor simulation (RK4 integration at 200Hz), state-based PPO expert, and an HDF5 synthetic data collection pipeline.
 
-- 🛠️ **Tech Stack**: Python, PyTorch, CNN, PPO
+- 🛠️ **Tech Stack**: PyTorch, CNN, PPO
 - 🗓️ **Timeline**: Feb 2026 - Jun 2026
-- ⚙️ **Built**: Custom 6-DOF quadrotor simulation (RK4 integration at 200Hz), state-based PPO expert, and an HDF5 synthetic data collection pipeline
+- 🚩 **Status**: Completed
 
 ### 🏭 Factory ERP System
-> Production ERP for a Manufacturer
 
-Deployed a production ERP that replaced a manufacturer's MS Access system with one quote-to-shipment workflow, used by management and 4 shop-floor stations.
+Deployed a production ERP that replaced a manufacturer's MS Access system with one quote-to-shipment workflow, used daily by 2 managers and 4 shop-floor stations. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React, TypeScript, Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
 
-- 🛠️ **Tech Stack**: Django REST Framework, React, PostgreSQL
+- 🛠️ **Tech Stack**: Django REST Framework, React, TypeScript, PostgreSQL
 - 🚩 **Status**: In Production
-- 📋 [API Documentation](https://github.com/Ben0126/factory-erp/tree/main/ERP)
+- 🔗 [Project link](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
 ### 🍽️ FoodFate
-> Restaurant Recommendation App
 
 Built a restaurant recommendation app with personalized filtering, a roulette-style random picker, and Google Maps integration.
 
 - 🛠️ **Tech Stack**: Flutter, Python Flask, PostgreSQL, Google Maps API
-- 📋 [Project Details](https://github.com/Ben0126/food_fate)
+- 🚩 **Status**: Active Development (MVP)
+- 🔗 [Project link](https://github.com/Ben0126/food_fate)
 
 ### 🌐 Other Small Projects
 
-- ⌨️ **English Typing and Listening Practice**
-  > A web application designed to improve English typing speed and listening comprehension.
+- ⌨️ **English Typing & Listening Practice**
+  > A web app for improving English typing speed and listening comprehension.
   - 🔗 [Go to App](https://ben0126.github.io/english_typing_practice/)
 
-- ☕ **Corvallis Coffee Shop and Restaurant Map**
-  > An interactive recommendation map for coffee shops and restaurants specifically for the Corvallis area.
+- ☕ **Corvallis Coffee Map**
+  > An interactive recommendation map of coffee shops and restaurants in Corvallis, OR.
   - 🔗 [Go to App](https://ben0126.github.io/corvallis-coffee-map/)
 
-- 💰 **Bookkeeping Website (App)**
-  > A simple and practical personal bookkeeping application.
+- 💰 **Bookkeeping App**
+  > A simple personal expense and budget tracker.
   - 🔗 [Go to App](https://bookkeeping-app-three.vercel.app/)
 
 ## 💻 Technical Skills
@@ -115,9 +112,9 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 ### Programming & Tools
 <div>
   <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/-MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-  <img src="https://img.shields.io/badge/-ROS%20/%20ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ROS%20%2F%20ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white" />
   <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
@@ -133,26 +130,26 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 
 ### Domains of Expertise
 - 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
-- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), **Diffusion Policy**, PyTorch, CUDA, OpenCV, Metaheuristic Algorithms (PSO, GA)
-- 🔧 **Software** - Python, C++, MATLAB, Git, Linux, Django, React, Flutter, PostgreSQL
+- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), Diffusion Policy, PyTorch, CUDA, OpenCV, Actor-Critic, PSO / GA (metaheuristics)
+- 🔧 **Software** - C++, C, Python, MATLAB, SQL (PostgreSQL), Git, Linux, Django, React, Flutter, TypeScript, JavaScript, Kotlin
 
 ## 📚 Publications
 
 ### Journal Papers
-- Liu, C.H., **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Shen, S.C., Ding, Z.A., Chu, L.M.* (2023). "Design of Reinforcement Learning Controller for Quadcopter in Flight Environment with Random Disturbance," *Green Science & Technology Journal (ISSN: 2223-6961)*, Vol. 13, No. 1, pp.45-54.
+- Liu, C.H., **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Shen, S.C., Ding, Z.A., Chu, L.M.\* (2023). "Design of Reinforcement Learning Controller for Quadcopter in Flight Environment with Random Disturbance," *Green Science & Technology Journal (ISSN: 2223-6961), Vol. 13, No. 1, pp. 45-54*.
 
 ### Conference Papers
-- Liu, C.H.*, **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Luo, G.Y., Shen, S.C., Ding, Z.A., Chu, L.M. (2023). "Performance Evaluation of Proximal Policy Optimization Algorithm in Controlling Quadcopters," *IEEE International Symposium on Computer, Consumer and Control (IEEE-IS3C)*, Taichung, Taiwan.
+- Liu, C.H.\*, **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Luo, G.Y., Shen, S.C., Ding, Z.A., Chu, L.M. (2023). "Performance Evaluation of Proximal Policy Optimization Algorithm in Controlling Quadcopters," *IEEE International Symposium on Computer, Consumer and Control (IEEE-IS3C), Taichung, Taiwan*.
 
-- Liu, C.H.*, **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Luo, G.Y., Chu, L.M.* (2023). "Analysis of Various Control Strategies for Indoor Quadcopter Applications," *Conference of Research and Development in Technology Education (CRDTE)*, Kaohsiung, Taiwan. (Oral presentation)
+- Liu, C.H.\*, **Yeh, S.P.**, Wang, Y.C., Lai, W.L., Luo, G.Y., Chu, L.M.\* (2023). "Analysis of Various Control Strategies for Indoor Quadcopter Applications," *Conference of Research and Development in Technology Education (CRDTE), Kaohsiung, Taiwan*. (Oral presentation)
 
-- Liu, C.H.*, Lai, W.L., Shen, S.C., **Yeh, S.P.**, Wu, P.C., Wang, Y.C., Luo, G.Y. (2022). "Impact of control strategies on altitude control in indoor quadcopter," *IET International Conference on Engineering Technologies and Applications (IET ICETA)*, Changhua, Taiwan. (Poster presentation)
+- Liu, C.H.\*, Lai, W.L., Shen, S.C., **Yeh, S.P.**, Wu, P.C., Wang, Y.C., Luo, G.Y. (2022). "Impact of control strategies on altitude control in indoor quadcopter," *IET International Conference on Engineering Technologies and Applications (IET ICETA), Changhua, Taiwan*. (Poster presentation)
 
 ## 🏆 Awards & Honors
 
 - 🎓 **College Student Research Scholarship** - Ministry of Science and Technology, Taiwan (co-author)
-- 🥇 **SOS-IPO** (1st Place) - College Competition for Innovative Startup Pitch
-- 🥇 **Startup Internship Learning Showcase** (1st Place) - College Competition
+- 🥇 **SOS-IPO (1st Place)** - College Competition for Innovative Startup Pitch
+- 🥇 **Startup Internship Learning Showcase (1st Place)** - College Competition
 
 ## 📊 Developer Profile
 
@@ -178,11 +175,10 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 
 ## 🔗 Contact Me
 
-Open to Summer 2027 internship opportunities in robotics software and autonomy. Feel free to reach out:
+Seeking a Summer 2027 internship in Robotics Software or Autonomy. Feel free to reach out:
 
 - 📧 Email: [spyeh26@gmail.com](mailto:spyeh26@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/benyeh26](https://www.linkedin.com/in/benyeh26/)
-- 📱 US Phone: [(+1)541-250-2269](tel:+15412502269)
 - 🌐 Personal Website: [https://my-web-gules.vercel.app/](https://my-web-gules.vercel.app/)
 
 ---
