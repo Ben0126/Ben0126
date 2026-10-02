@@ -133,7 +133,7 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 ### Domains of Expertise
 - 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
 - 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), Diffusion Policy, PyTorch, OpenCV, Actor-Critic, PSO / GA (metaheuristics)
-- 🔧 **Software** - C++, C, Python, MATLAB, SQL (PostgreSQL), Git, Linux, Django, React, Flutter, TypeScript, JavaScript, Kotlin
+- 🔧 **Software** - C++, C, Python, MATLAB, SQL (PostgreSQL), Git, Linux, Django, React, Flutter, JavaScript, Kotlin
 
 ## 📚 Publications
 

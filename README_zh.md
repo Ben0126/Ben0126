@@ -133,7 +133,7 @@
 ### 專業領域
 - 🚁 **機器人** - ROS 2 / ROS、PX4、Gazebo SITL、視覺慣性里程計 (VIO)、群體避碰 (APF)、飛行測試
 - 🤖 **AI / 機器學習** - 強化學習 (PPO, DDPG)、Diffusion Policy、PyTorch、OpenCV、Actor-Critic、PSO / GA (metaheuristics)
-- 🔧 **軟體** - C++、C、Python、MATLAB、SQL (PostgreSQL)、Git、Linux、Django、React、Flutter、TypeScript、JavaScript、Kotlin
+- 🔧 **軟體** - C++、C、Python、MATLAB、SQL (PostgreSQL)、Git、Linux、Django、React、Flutter、JavaScript、Kotlin
 
 ## 📚 論文發表
 
