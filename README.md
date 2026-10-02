@@ -31,9 +31,9 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 
 <div align="center">
 
-| 🚁 **`50`** | ✈️ **`10`** | 🛡️ **`100%`** | 📚 **`4`** |
+| ✈️ **`10`** | 🚁 **`10`** | 💻 **`50`** | 📚 **`4`** |
 |:---:|:---:|:---:|:---:|
-| Drones in SITL Swarm Validation | Drones in Physical Flight Test | Collision-Free Test Scenarios | Publications |
+| Drones in Physical Flight Test | Drones in Gazebo PX4 SITL | Drones in Offline Scaling Harness | Publications |
 
 </div>
 
@@ -72,31 +72,33 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ## 🔭 Projects
 
 ### 🚁 Vision-DPPO
-> End-to-End Drone Control via Diffusion Policy
+> Visuomotor Quadrotor Hover via Flow Matching (Sim)
 
-Designed an end-to-end visuomotor control framework replacing cascaded PID with a Diffusion Policy, mapping raw FPV image sequences directly to 4D motor thrusts via a CNN encoder and Conditional 1D U-Net. Prototyped the core software infrastructure in Python and PyTorch, including a custom 6-DOF quadrotor simulation (RK4 integration at 200Hz), state-based PPO expert, and an HDF5 synthetic data collection pipeline.
+Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-order motor lag) with a synthetic, domain-randomized 64×64 FPV renderer, and logged demonstrations to HDF5 from a state-based PPO expert and a PID teacher. Trained a 13.5M-parameter flow-matching policy (1D U-Net with a CNN encoder and IMU-to-vision cross-attention) by imitation, mapping 2 FPV frames, IMU and a mode flag to thrust/body-rate commands at 50 Hz over 200 Hz INDI. Found my old RMSE metric averaged only over steps flown, rewarding early crashes; built a frozen eval harness (paired starts, survival-conditioned error, bootstrap CIs, measured oracle) showing my prior best models' gains were artifacts. Ran 3-seed ablations with it: a Dispersive Loss rebuilt from its authors' code gave no pass-rate gain (−2.2 pp; pooled seed std 6.3 pp), and better sensing, far-range demos and 3.3× capacity all left hover error ~2.4–3.0 m (oracle 0.07 m).
 
-- 🛠️ **Tech Stack**: PyTorch, CNN, PPO
+- 🛠️ **Tech Stack**: PyTorch, PPO
 - 🗓️ **Timeline**: Feb 2026 - Jun 2026
-- 🚩 **Status**: Completed
+- 🚩 **Status**: Completed · Paper Draft
 
 ### 🏭 Factory ERP System
 
-Built and deployed a full-stack ERP (Django REST, PostgreSQL, React, Docker) to replace a manufacturer's MS Access system that only the owner could operate; migrated ~690K rows from 31 legacy databases and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React (JavaScript), Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
+Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system that only the owner could operate; migrated data from 31 legacy databases (~690K source rows) and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
 
 - 🛠️ **Tech Stack**: Django REST Framework, React, JavaScript, PostgreSQL
 - 🚩 **Status**: Deployed (Rolling Out)
-- 🔗 [Project link](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
-### 🍽️ FoodFate
+### 🔧 NoteHub
+> Self-Hosted Markdown Notes App
 
-Built a restaurant recommendation app with personalized filtering, a roulette-style random picker, and Google Maps integration.
+Built a 6-tool MCP server that lets Claude Desktop search and read notes via the app's HTTP API, with only two additive write tools (append to inbox, create a flashcard note), so the agent can never rewrite or delete notes. Fixed a race that returned HTTP 500 on folder imports when the file watcher and importer indexed the same note at once, by serializing indexing with an asyncio lock and a SQLite upsert; added concurrency regression tests.
 
-- 🛠️ **Tech Stack**: Flutter, Python Flask, PostgreSQL, Google Maps API
-- 🚩 **Status**: Active Development (MVP)
-- 🔗 [Project link](https://github.com/Ben0126/food_fate)
+- 🛠️ **Tech Stack**: FastAPI, React, SQLite FTS5
+- 🚩 **Status**: Personal Project
 
 ### 🌐 Other Small Projects
+
+- 🍽️ **FoodFate**
+  > Built a restaurant recommendation app with personalized filtering, a roulette-style random picker, and Google Maps integration.
 
 - ⌨️ **English Typing & Listening Practice**
   > A web app for improving English typing speed and listening comprehension.
@@ -121,7 +123,6 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
   <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -132,8 +133,8 @@ Built a restaurant recommendation app with personalized filtering, a roulette-st
 
 ### Domains of Expertise
 - 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
-- 🤖 **AI / ML** - Reinforcement Learning (PPO, DDPG), Diffusion Policy, PyTorch, OpenCV, Actor-Critic, PSO / GA (metaheuristics)
-- 🔧 **Software** - C++, C, Python, MATLAB, SQL (PostgreSQL), Git, Linux, Django, React, Flutter, JavaScript, Kotlin
+- 🤖 **AI / ML** - Reinforcement Learning (PPO), Imitation Learning (Diffusion / Flow Matching), PyTorch, Actor-Critic, PSO / GA (metaheuristics)
+- 🔧 **Software** - C++, C, Python, JavaScript, MATLAB, SQL (PostgreSQL), Git, Linux, Docker, Django, React, Flutter
 
 ## 📚 Publications
 

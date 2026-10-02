@@ -31,9 +31,9 @@
 
 <div align="center">
 
-| 🚁 **`50`** | ✈️ **`10`** | 🛡️ **`100%`** | 📚 **`4`** |
+| ✈️ **`10`** | 🚁 **`10`** | 💻 **`50`** | 📚 **`4`** |
 |:---:|:---:|:---:|:---:|
-| 架無人機 SITL 群飛驗證 | 架無人機實機飛行測試 | 測試情境零碰撞 | 篇論文發表 |
+| 架無人機實機飛行測試 | 架無人機 Gazebo PX4 模擬 | 架無人機離線擴展模擬 | 篇論文發表 |
 
 </div>
 
@@ -72,31 +72,32 @@
 ## 🔭 專案
 
 ### 🚁 Vision-DPPO
-> 以 Diffusion Policy 實現端到端無人機控制
+> 以 Flow Matching 實現視覺四旋翼懸停（模擬）
 
-設計端到端視覺運動控制框架，以 Diffusion Policy 取代串級 PID，透過 CNN 編碼器與 Conditional 1D U-Net，將原始 FPV 影像序列直接映射為 4 軸馬達推力。以 Python 與 PyTorch 建立核心軟體架構，包含自建 6 自由度四旋翼模擬器 (RK4 積分，200Hz)、基於狀態的 PPO 專家策略與 HDF5 合成資料收集流程。
+建立 6 自由度四旋翼模擬器（四元數姿態、200 Hz RK4 積分、一階馬達延遲）與合成、加入領域隨機化的 64×64 FPV 渲染器，並由基於狀態的 PPO 專家與 PID 教師錄製示範資料（HDF5）。以模仿學習訓練 1,350 萬參數的 flow-matching 策略（CNN 編碼器、IMU→影像交叉注意力、1D U-Net），由 2 張 FPV 影像、IMU 與懸停／修正模式旗標輸出推力與機體角速度指令（50 Hz），內迴路為 200 Hz INDI 角速度控制器。發現自己先前的 RMSE 指標只對已飛行的步數取平均、等於獎勵提早墜機的策略；建立固定的評估協議（配對初始條件、只計存活回合的誤差、bootstrap 信賴區間、實測 oracle），證明先前最佳模型的優勢其實是提早墜機造成的假象。以此協議進行 3 個 seed 的消融實驗：依原作者程式碼重新實作的 Dispersive Loss 沒有提升通過率（−2.2 pp；兩組合併的 seed 標準差 6.3 pp）；改善感測、加入遠距教師資料、模型容量放大 3.3 倍，懸停位置誤差都仍約 2.4–3.0 m（oracle 為 0.07 m）。
 
-- 🛠️ **技術**：PyTorch、CNN、PPO
+- 🛠️ **技術**：PyTorch、PPO
 - 🗓️ **期間**：2026 年 2 月 - 2026 年 6 月
-- 🚩 **狀態**：已完成
+- 🚩 **狀態**：已完成・論文草稿
 
 ### 🏭 工廠 ERP 系統
 
-建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統；從 31 個舊資料庫遷移約 69 萬筆資料，並以「訂單到出貨」為主軸重新設計流程，讓新進人員也能接手日常作業，每個生產流程各設一個站點看板。後端使用 Django REST Framework 與 PostgreSQL，前端使用 React（JavaScript）、Ant Design 與 Zustand。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
+建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統；從 31 個舊資料庫遷移資料（來源約 69 萬列），並以「訂單到出貨」為主軸重新設計流程，讓新進人員也能接手日常作業，每個生產流程各設一個站點看板。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
 
 - 🛠️ **技術**：Django REST Framework、React、JavaScript、PostgreSQL
 - 🚩 **狀態**：導入中
-- 🔗 [專案連結](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
-### 🍽️ 食來運轉 FoodFate
+### 🔧 NoteHub 筆記本
 
-開發餐廳推薦 App，提供個人化篩選、輪盤式隨機選擇，並整合 Google Maps。
+建立 MCP 伺服器（6 個工具），讓 Claude 桌面版透過 App 的 HTTP API 搜尋與閱讀筆記；寫入只開放兩個「只增不改」的工具（附加到今天的隨手記、新建閃卡筆記），代理無法改寫或刪除既有筆記。修正檔案監聽器與匯入流程同時索引同一篇筆記時、匯入資料夾回 HTTP 500 的競態條件：以 asyncio 鎖序列化索引並改用 SQLite upsert，並補上並行回歸測試。
 
-- 🛠️ **技術**：Flutter、Python Flask、PostgreSQL、Google Maps API
-- 🚩 **狀態**：開發中 (MVP)
-- 🔗 [專案連結](https://github.com/Ben0126/food_fate)
+- 🛠️ **技術**：FastAPI、React、SQLite FTS5
+- 🚩 **狀態**：個人專案
 
 ### 🌐 其他小專案
+
+- 🍽️ **食來運轉 FoodFate**
+  > 開發餐廳推薦 App，提供個人化篩選、輪盤式隨機選擇，並整合 Google Maps。
 
 - ⌨️ **英文打字與聽力練習**
   > 提升英文打字速度與聽力理解的網頁應用。
@@ -121,7 +122,6 @@
   <img src="https://img.shields.io/badge/-PX4-00A1DE?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Gazebo%20SITL-F58113?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -132,8 +132,8 @@
 
 ### 專業領域
 - 🚁 **機器人** - ROS 2 / ROS、PX4、Gazebo SITL、視覺慣性里程計 (VIO)、群體避碰 (APF)、飛行測試
-- 🤖 **AI / 機器學習** - 強化學習 (PPO, DDPG)、Diffusion Policy、PyTorch、OpenCV、Actor-Critic、PSO / GA (metaheuristics)
-- 🔧 **軟體** - C++、C、Python、MATLAB、SQL (PostgreSQL)、Git、Linux、Django、React、Flutter、JavaScript、Kotlin
+- 🤖 **AI / 機器學習** - 強化學習 (PPO)、模仿學習 (Diffusion / Flow Matching)、PyTorch、Actor-Critic、PSO / GA (metaheuristics)
+- 🔧 **軟體** - C++、C、Python、JavaScript、MATLAB、SQL (PostgreSQL)、Git、Linux、Docker、Django、React、Flutter
 
 ## 📚 論文發表
 
