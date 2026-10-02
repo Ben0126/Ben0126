@@ -82,9 +82,9 @@ Designed an end-to-end visuomotor control framework replacing cascaded PID with 
 
 ### 🏭 Factory ERP System
 
-Built and deployed a full-stack ERP (Django REST, PostgreSQL, React, Docker) to replace a manufacturer's MS Access system that only the owner could operate; migrated ~690K rows from 31 legacy databases and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React, TypeScript, Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
+Built and deployed a full-stack ERP (Django REST, PostgreSQL, React, Docker) to replace a manufacturer's MS Access system that only the owner could operate; migrated ~690K rows from 31 legacy databases and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React (JavaScript), Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
 
-- 🛠️ **Tech Stack**: Django REST Framework, React, TypeScript, PostgreSQL
+- 🛠️ **Tech Stack**: Django REST Framework, React, JavaScript, PostgreSQL
 - 🚩 **Status**: Deployed (Rolling Out)
 - 🔗 [Project link](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 

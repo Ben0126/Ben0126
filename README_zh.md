@@ -82,9 +82,9 @@
 
 ### 🏭 工廠 ERP 系統
 
-建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統；從 31 個舊資料庫遷移約 69 萬筆資料，並以「訂單到出貨」為主軸重新設計流程，讓新進人員也能接手日常作業，每個生產流程各設一個站點看板。後端使用 Django REST Framework 與 PostgreSQL，前端使用 React、TypeScript、Ant Design 與 Zustand。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
+建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統；從 31 個舊資料庫遷移約 69 萬筆資料，並以「訂單到出貨」為主軸重新設計流程，讓新進人員也能接手日常作業，每個生產流程各設一個站點看板。後端使用 Django REST Framework 與 PostgreSQL，前端使用 React（JavaScript）、Ant Design 與 Zustand。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
 
-- 🛠️ **技術**：Django REST Framework、React、TypeScript、PostgreSQL
+- 🛠️ **技術**：Django REST Framework、React、JavaScript、PostgreSQL
 - 🚩 **狀態**：導入中
 - 🔗 [專案連結](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
