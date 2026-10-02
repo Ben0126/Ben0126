@@ -42,7 +42,7 @@
 ### 🚁 工業技術研究院 (ITRI) | 資訊與通訊研究所
 **機器人軟體工程實習生** _(2026 年 7 月 - 2026 年 8 月)_
 - 以 C++ (ROS 2、PX4) 負責集中式無人機群避碰系統的端到端開發，設計新的 APF (人工勢場) 演算法，在避免碰撞的同時維持隊形。
-- 在 Gazebo PX4 SITL 中以最多 50 架無人機驗證，在設定的運作條件下，所有測試情境皆無碰撞。
+- 在 Gazebo PX4 SITL 中以最多 10 架無人機進行紅綠對照實驗驗證（對飛／交叉最小間距：開啟避撞 ≥5.4 m，關閉時最近僅 0.04 m），並以離線閉迴路模擬擴展到 50 架（規劃器只用掉 20 ms 控制週期的不到 1%）。
 - 將系統從模擬推進到 10 架無人機的實機飛行測試。
 
 ### 🏫 中華民國陸軍 | 
@@ -82,10 +82,10 @@
 
 ### 🏭 工廠 ERP 系統
 
-部署正式上線的 ERP，取代製造商原本的 MS Access 系統，整合為一條從報價到出貨的流程，每天供 2 位管理者與 4 個產線站點使用。後端使用 Django REST Framework 與 PostgreSQL，前端使用 React、TypeScript、Ant Design 與 Zustand。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
+建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統；從 31 個舊資料庫遷移約 69 萬筆資料，並以「訂單到出貨」為主軸重新設計流程，讓新進人員也能接手日常作業，每個生產流程各設一個站點看板。後端使用 Django REST Framework 與 PostgreSQL，前端使用 React、TypeScript、Ant Design 與 Zustand。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。
 
 - 🛠️ **技術**：Django REST Framework、React、TypeScript、PostgreSQL
-- 🚩 **狀態**：已上線
+- 🚩 **狀態**：導入中
 - 🔗 [專案連結](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
 ### 🍽️ 食來運轉 FoodFate

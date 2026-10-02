@@ -42,7 +42,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
 - Owned end-to-end development of a collision-avoidance system for a centralized drone swarm in C++ (ROS 2, PX4), designing a new APF-based algorithm that holds formation while avoiding collisions.
-- Validated in Gazebo PX4 SITL with up to 50 drones, avoiding collisions in 100% of test scenarios within the defined operating conditions.
+- Validated in Gazebo PX4 SITL with up to 10 drones using red/green A/B tests (head-on/crossing separation ≥5.4 m vs. as little as 0.04 m with avoidance off), and in an offline closed-loop harness scaled to 50 drones (planner <1% of the 20 ms control budget).
 - Took the system from simulation to a 10-drone physical flight test.
 
 ### 🏫 Republic of China (Taiwan) Army | 
@@ -82,10 +82,10 @@ Designed an end-to-end visuomotor control framework replacing cascaded PID with 
 
 ### 🏭 Factory ERP System
 
-Deployed a production ERP that replaced a manufacturer's MS Access system with one quote-to-shipment workflow, used daily by 2 managers and 4 shop-floor stations. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React, TypeScript, Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
+Built and deployed a full-stack ERP (Django REST, PostgreSQL, React, Docker) to replace a manufacturer's MS Access system that only the owner could operate; migrated ~690K rows from 31 legacy databases and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Built the backend in Django REST Framework and PostgreSQL, and the frontend in React, TypeScript, Ant Design, and Zustand. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
 
 - 🛠️ **Tech Stack**: Django REST Framework, React, TypeScript, PostgreSQL
-- 🚩 **Status**: In Production
+- 🚩 **Status**: Deployed (Rolling Out)
 - 🔗 [Project link](https://github.com/Ben0126/factory-erp/tree/main/ERP)
 
 ### 🍽️ FoodFate
