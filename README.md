@@ -45,6 +45,9 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 - Validated in Gazebo PX4 SITL with up to 50 drones, avoiding collisions in 100% of test scenarios within the defined operating conditions.
 - Took the system from simulation to a 10-drone physical flight test.
 
+### 🏫 Republic of China (Taiwan) Army | 
+**Mandatory Military Service** _(Jan 2025 - Apr 2025)_
+
 ### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab.
 **Engineer Intern** _(Nov 2023 - Aug 2024)_
 - Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) in C/C++ and ROS, using visual-inertial odometry (VIO) for position hold.
