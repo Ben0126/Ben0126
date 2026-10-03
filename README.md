@@ -20,7 +20,7 @@
 
 ## 🌱 About Me
 
-M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Built a drone-swarm collision-avoidance system at ITRI, from Gazebo simulation to a 10-drone flight test (C++, ROS 2, PX4). Seeking a Summer 2027 internship in Robotics Software or Autonomy.
+M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Built a drone-swarm collision-avoidance system at ITRI (C++, ROS 2, PX4), from Gazebo simulation to a 10-drone flight test. Seeking a Summer 2027 internship in Robotics Software or Autonomy.
 
 - 🎓 **Now**: Master of Engineering in Electrical and Computer Engineering, **Oregon State University** (Expected Mar 2028)
 - 🎓 Bachelor of Science in Green Energy and Information Technology, **National Taitung University** (Sep 2020 - Jun 2024) · GPA: 3.3/4.0 | Graduated with College Student Research Scholarship
@@ -41,17 +41,17 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
-- Owned end-to-end development of a collision-avoidance system for a centralized drone swarm in C++ (ROS 2, PX4), designing a new APF-based algorithm that holds formation while avoiding collisions.
-- Validated in Gazebo PX4 SITL with up to 10 drones using red/green A/B tests (head-on/crossing separation ≥5.4 m vs. as little as 0.04 m with avoidance off), and in an offline closed-loop harness scaled to 50 drones (planner <1% of the 20 ms control budget).
-- Took the system from simulation to a 10-drone physical flight test.
+- Owned the collision-avoidance system for a centralized drone swarm in C++ with ROS 2 and PX4, designing a new APF-based algorithm that avoids collisions without breaking formation.
+- Validated with red/green A/B tests in Gazebo PX4 SITL with up to 10 drones: head-on and crossing drones kept ≥5.4 m apart vs. as close as 0.04 m with avoidance off. In a 50-drone offline closed-loop harness, the planner used <1% of the 20 ms control budget. At that scale, communication was the bottleneck, not compute.
+- In a 10-drone physical flight test, the other drones steered around two that dropped into failsafe hover on sensor faults.
 
 ### 🏫 Republic of China (Taiwan) Army | 
 **Mandatory Military Service** _(Jan 2025 - Apr 2025)_
 
 ### 👨‍💻 Industrial Technology Research Institute (ITRI) | Electronic and Optoelectronic System Research Lab.
 **Engineer Intern** _(Nov 2023 - Aug 2024)_
-- Integrated and maintained a GPS-denied quadcopter platform (flight controller, onboard computer, depth camera) in C/C++ and ROS, using visual-inertial odometry (VIO) for position hold.
-- Debugged a vision-based follow-me feature across the tracking model, ROS, and the flight controller: in flight tests, isolated failure cases where the model's output was correct but the drone did not move or moved with the wrong magnitude, and tuned the response.
+- Integrated and maintained a GPS-denied quadcopter's flight controller, onboard computer and depth camera in C/C++ and ROS, using visual-inertial odometry (VIO) for position hold.
+- Debugged a vision-based follow-me feature from the tracking model through ROS to the flight controller. In flight tests, isolated failure cases where the model's output was correct but the drone did not move or moved the wrong amount, then tuned the response.
 
 ### 🏫 National Taitung University | Intelligent Energy Management Lab
 **Research Assistant** _(Aug 2023 - Feb 2024)_
@@ -74,7 +74,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ### 🚁 Vision-DPPO
 > Visuomotor Quadrotor Hover via Flow Matching (Sim)
 
-Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-order motor lag) with a synthetic, domain-randomized 64×64 FPV renderer, and logged demonstrations to HDF5 from a state-based PPO expert and a PID teacher. Trained a 13.5M-parameter flow-matching policy (1D U-Net with a CNN encoder and IMU-to-vision cross-attention) by imitation, mapping 2 FPV frames, IMU and a mode flag to thrust/body-rate commands at 50 Hz over 200 Hz INDI. Found my old RMSE metric averaged only over steps flown, rewarding early crashes; built a frozen eval harness (paired starts, survival-conditioned error, bootstrap CIs, measured oracle) showing my prior best models' gains were artifacts. Ran 3-seed ablations with it: a Dispersive Loss rebuilt from its authors' code gave no pass-rate gain (−2.2 pp; pooled seed std 6.3 pp), and better sensing, far-range demos and 3.3× capacity all left hover error ~2.4–3.0 m (oracle 0.07 m).
+Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-order motor lag) and a synthetic, domain-randomized 64×64 FPV renderer, then recorded HDF5 demonstrations from a state-based PPO expert and a PID teacher. Trained a 13.5M-parameter flow-matching policy by imitation. It maps 2 FPV frames, IMU and a mode flag to 50 Hz thrust/body-rate commands for a 200 Hz INDI inner loop (CNN encoder, IMU-to-vision cross-attention, 1D U-Net). Found my old RMSE metric rewarded early crashes by averaging only over steps flown. Built a frozen eval harness (paired starts, survival-conditioned error, bootstrap CIs, measured oracle) that exposed my prior best gains as artifacts. Ran 3-seed ablations with it: a Dispersive Loss rebuilt from its authors' code gave no pass-rate gain (−2.2 pp, pooled seed std 6.3 pp). Better sensing, far-range demos and 3.3× capacity each left hover error ~2.4–3.0 m vs a 0.07 m oracle.
 
 - 🛠️ **Tech Stack**: PyTorch, PPO
 - 🗓️ **Timeline**: Feb 2026 - Jun 2026
@@ -82,7 +82,7 @@ Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-ord
 
 ### 🏭 Factory ERP System
 
-Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system that only the owner could operate; migrated data from 31 legacy databases (~690K source rows) and redesigned the workflow around order-to-shipment, so new staff can now run daily operations, with display stations at each production step. Implemented a pricing engine that combines product specifications with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
+Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system only the owner could operate, so new staff can run daily operations, with 5 shop-floor display stations. Rebuilt the order-to-shipment workflow around orders after the product-first data model clashed with how the factory runs: approving an order now creates the work order and purchase drafts for missing materials when stock is short. Wrote 14 idempotent import commands, each with a dry-run mode, to migrate 31 legacy databases (~690K source rows). Implemented a pricing engine that combines product specs with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
 
 - 🛠️ **Tech Stack**: Django REST Framework, React, JavaScript, PostgreSQL
 - 🚩 **Status**: Deployed (Rolling Out)
@@ -90,7 +90,7 @@ Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Acc
 ### 🔧 NoteHub
 > Self-Hosted Markdown Notes App
 
-Built a 6-tool MCP server that lets Claude Desktop search and read notes via the app's HTTP API, with only two additive write tools (append to inbox, create a flashcard note), so the agent can never rewrite or delete notes. Fixed a race that returned HTTP 500 on folder imports when the file watcher and importer indexed the same note at once, by serializing indexing with an asyncio lock and a SQLite upsert; added concurrency regression tests.
+Built a 6-tool MCP server so Claude Desktop can search and read notes via the app's HTTP API. Its only two write tools are additive (append to inbox, create a flashcard note), so the agent can never rewrite or delete notes. Fixed a race that returned HTTP 500 on folder imports when the file watcher and importer indexed the same note at once. Added an asyncio lock to serialize indexing, a SQLite upsert, and concurrency regression tests.
 
 - 🛠️ **Tech Stack**: FastAPI, React, SQLite FTS5
 - 🚩 **Status**: Personal Project
