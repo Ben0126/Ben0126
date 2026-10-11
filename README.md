@@ -20,9 +20,9 @@
 
 ## 🌱 About Me
 
-M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Built a drone-swarm collision-avoidance system at ITRI (C++, ROS 2, PX4), from Gazebo simulation to a 10-drone flight test. Seeking a Summer 2027 internship in Robotics Software or Autonomy.
+M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Designed a drone-swarm collision-avoidance system at ITRI (ROS 2, PX4), from Gazebo simulation to a 10-drone flight test. Seeking a Summer 2027 internship in Robotics Software or Autonomy.
 
-- 🎓 **Now**: Master of Engineering in Electrical and Computer Engineering, **Oregon State University** (Expected Mar 2028)
+- 🎓 **Now**: Master of Engineering in Electrical and Computer Engineering, **Oregon State University** (Sep 2026 - Expected Mar 2028)
 - 🎓 Bachelor of Science in Green Energy and Information Technology, **National Taitung University** (Sep 2020 - Jun 2024) · GPA: 3.3/4.0 | Graduated with College Student Research Scholarship
 - 💼 Robotics Software Engineering Intern, **Industrial Technology Research Institute (ITRI)** – Information and Communications Research Laboratories (2026)
 - 💼 Engineer Intern, **Industrial Technology Research Institute (ITRI)** – Electronic and Optoelectronic System Research Lab. (2023–2024)
@@ -41,9 +41,10 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
-- Owned the collision-avoidance system for a centralized drone swarm in C++ with ROS 2 and PX4, designing a new APF-based algorithm that avoids collisions without breaking formation.
+- Owned the collision-avoidance system for a centralized drone swarm (ROS 2, PX4), designing a new APF-based algorithm that avoids collisions without breaking formation.
 - Validated with red/green A/B tests in Gazebo PX4 SITL with up to 10 drones: head-on and crossing drones kept ≥5.4 m apart vs. as close as 0.04 m with avoidance off. In a 50-drone offline closed-loop harness, the planner used <1% of the 20 ms control budget. At that scale, communication was the bottleneck, not compute.
 - In a 10-drone physical flight test, the other drones steered around two that dropped into failsafe hover on sensor faults.
+- Set up the Claude Code workflow for the swarm repo. A skeptic subagent must try to refute every root-cause claim before a fix ships, and a hook asks for confirmation before destructive git or rm commands when another session has uncommitted work.
 
 ### 🏫 Republic of China (Taiwan) Army | 
 **Mandatory Military Service** _(Jan 2025 - Apr 2025)_
@@ -82,7 +83,7 @@ Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-ord
 
 ### 🏭 Factory ERP System
 
-Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system only the owner could operate, so new staff can run daily operations, with 5 shop-floor display stations. Rebuilt the order-to-shipment workflow around orders after the product-first data model clashed with how the factory runs: approving an order now creates the work order and purchase drafts for missing materials when stock is short. Wrote 14 idempotent import commands, each with a dry-run mode, to migrate 31 legacy databases (~690K source rows). Implemented a pricing engine that combines product specs with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints.
+Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system only the owner could operate, so new staff can run daily operations, with 5 shop-floor display stations. Rebuilt the order-to-shipment workflow around orders after the product-first data model clashed with how the factory runs: approving an order now creates the work order and purchase drafts for missing materials when stock is short. Wrote 14 idempotent import commands, each with a dry-run mode, to migrate 31 legacy databases (~690K source rows). Implemented a pricing engine that combines product specs with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints. Specified an AI assistant for the ERP that runs on a local Qwen 2.5-14B model (Ollama) or the Gemini API. Staff ask in chat for a product's or an order's details, so a customer's call gets a quick answer. Defined the tools the assistant may call, such as drafting purchase orders. Anything that writes data waits for a person to approve it.
 
 - 🛠️ **Tech Stack**: Django REST Framework, React, JavaScript, PostgreSQL
 - 🚩 **Status**: Deployed (Rolling Out)
@@ -90,7 +91,7 @@ Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Acc
 ### 🔧 NoteHub
 > Self-Hosted Markdown Notes App
 
-Built a 6-tool MCP server so Claude Desktop can search and read notes via the app's HTTP API. Its only two write tools are additive (append to inbox, create a flashcard note), so the agent can never rewrite or delete notes. Fixed a race that returned HTTP 500 on folder imports when the file watcher and importer indexed the same note at once. Added an asyncio lock to serialize indexing, a SQLite upsert, and concurrency regression tests.
+Designed a 6-tool MCP server so Claude Desktop can search and read notes via the app's HTTP API. Its only two write tools are additive (append to inbox, create a flashcard note), so the agent can never rewrite or delete notes. Fixed a race that returned HTTP 500 on folder imports when the file watcher and importer indexed the same note at once. Added an asyncio lock to serialize indexing, a SQLite upsert, and concurrency regression tests.
 
 - 🛠️ **Tech Stack**: FastAPI, React, SQLite FTS5
 - 🚩 **Status**: Personal Project
@@ -132,7 +133,8 @@ Built a 6-tool MCP server so Claude Desktop can search and read notes via the ap
 </div>
 
 ### Domains of Expertise
-- 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing
+- 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing, PX4 ULog Analysis
+- 🔧 **AI Engineering** - LLM Integration (Ollama, Qwen 2.5, Gemini API), Tool Calling with Human Approval, MCP Servers, Claude Code (Skills, Subagents, Hooks), Evaluation Harness Design
 - 🤖 **AI / ML** - Reinforcement Learning (PPO), Imitation Learning (Diffusion / Flow Matching), PyTorch, Actor-Critic, PSO / GA (metaheuristics)
 - 🔧 **Software** - C++, C, Python, JavaScript, MATLAB, SQL (PostgreSQL), Git, Linux, Docker, Django, React, Flutter
 
