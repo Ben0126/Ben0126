@@ -41,10 +41,10 @@
 
 ### 🚁 工業技術研究院 (ITRI) | 資訊與通訊研究所
 **機器人軟體工程實習生** _(2026 年 7 月 - 2026 年 8 月)_
-- 負責集中式無人機群的避碰系統 (ROS 2、PX4)，設計新的 APF (人工勢場) 演算法，在避免碰撞的同時維持隊形。
+- 以 C++ 開發集中式無人機群的避碰系統 (ROS 2、PX4)，採用新的 APF (人工勢場) 演算法，在避免碰撞的同時維持隊形。
 - 在 Gazebo PX4 SITL 中以最多 10 架無人機進行紅綠對照實驗驗證（對飛／交叉最小間距：開啟避撞 ≥5.4 m，關閉時最近僅 0.04 m），並以離線閉迴路模擬擴展到 50 架（規劃器只用掉 20 ms 控制週期的不到 1%）；在這個規模下，瓶頸是通訊而不是運算。
 - 10 架無人機實機飛行測試中，兩架因感測器故障進入 failsafe 懸停，其他無人機都避開了它們。
-- 為無人機群專案設定 Claude Code 工作流程：任何根因結論都要先交給專門反駁的 skeptic subagent 攻擊過才能動手修；另有一個 hook，在別的 session 有未 commit 的改動時，刪檔或丟棄變更的 git 指令要先經人確認。
+- 為無人機群專案設定 Claude Code（AI 寫碼助手）工作流程：每個重大根因結論都要先交給專門反駁的 skeptic subagent 攻擊過才能動手修；另有一個 hook，在工作目錄有未 commit 的改動時，刪檔或丟棄變更的 git 指令要先經人確認。
 
 ### 🏫 中華民國陸軍 | 
 **義務役** _(2025 年 1 月 - 2025 年 4 月)_
@@ -83,9 +83,10 @@
 
 ### 🏭 工廠 ERP 系統
 
-建置並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統，讓新進人員也能接手日常作業；現場設有 5 個站點看板。發現以產品為主軸的資料模型與工廠「訂單先行」的實際運作衝突後，改以訂單為主軸重整「訂單到出貨」流程：訂單核准後，庫存不足時自動建立生產工單，缺料時建立採購草稿。撰寫 14 支可重跑（冪等）、皆有試跑（dry-run）模式的匯入指令，從 31 個舊資料庫遷移資料（來源約 69 萬列）。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。規劃 ERP 的 AI 助理，可跑在本機 Qwen 2.5-14B (Ollama) 或 Gemini API 上；員工用對話查詢產品或訂單的特定資訊，客戶來電時能快速回答。定義助理可以呼叫的工具，例如草擬採購單；任何會寫入資料的動作都要等人核准。
+設計並部署全端 ERP（Django REST、PostgreSQL、React、Docker），取代原本只有負責人會操作的 MS Access 系統，讓新進人員也能接手日常作業；現場設有 5 個站點看板。發現以產品為主軸的資料模型與工廠「訂單先行」的實際運作衝突後，改以訂單為主軸重整「訂單到出貨」流程：訂單核准後，庫存不足時自動建立生產工單，缺料時建立採購草稿。撰寫 14 支可重跑（冪等）、皆有試跑（dry-run）模式的匯入指令，從 31 個舊資料庫遷移資料（來源約 69 萬列）。實作報價引擎，結合產品規格與材料成本倍率，以保留毛利的公式計算，並透過 DRF API 提供。設計 ERP 的 AI 對話助理，包含提示詞與約 70 個可呼叫的工具；員工用對話查詢產品或訂單的特定資訊，客戶來電時能快速回答；任何會寫入資料的動作都要等人核准。設計採購單讀取功能，從客戶採購單抽出欄位。兩個功能都跑在一張 RTX 3090 上的本機 Qwen 2.5-14B (llama.cpp)，Gemini 為備用；在 5 份真實採購單上比較：下單客戶欄位 14B 5 份全對，7B 有 1 份把我方公司填進去。
 
 - 🛠️ **技術**：Django REST Framework、React、JavaScript、PostgreSQL
+- 🗓️ **期間**：2023 - 至今
 - 🚩 **狀態**：導入中
 
 ### 🔧 NoteHub 筆記本
@@ -133,8 +134,8 @@
 
 ### 專業領域
 - 🚁 **機器人** - ROS 2 / ROS、PX4、Gazebo SITL、視覺慣性里程計 (VIO)、群體避碰 (APF)、飛行測試、PX4 ULog 飛行日誌分析
-- 🔧 **AI 工程** - LLM 整合 (Ollama、Qwen 2.5、Gemini API)、工具呼叫與人工核准、MCP 伺服器、Claude Code (Skills、Subagents、Hooks)、評估協議設計
-- 🤖 **AI / 機器學習** - 強化學習 (PPO)、模仿學習 (Diffusion / Flow Matching)、PyTorch、Actor-Critic、PSO / GA (metaheuristics)
+- 🔧 **AI 工程** - LLM 整合 (本機 Qwen 2.5 / llama.cpp、Gemini API)、Prompt 工程、工具呼叫與人工核准、MCP 伺服器、Claude Code (Skills、Subagents、Hooks)、評估協議設計
+- 🤖 **AI / 機器學習** - 強化學習 (PPO)、Diffusion Policy / Flow Matching、超參數調校、PyTorch、Actor-Critic、PSO / GA (metaheuristics)
 - 🔧 **軟體** - C++、C、Python、JavaScript、MATLAB、SQL (PostgreSQL)、Git、Linux、Docker、Django、React、Flutter
 
 ## 📚 論文發表

@@ -20,7 +20,7 @@
 
 ## 🌱 About Me
 
-M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Designed a drone-swarm collision-avoidance system at ITRI (ROS 2, PX4), from Gazebo simulation to a 10-drone flight test. Seeking a Summer 2027 internship in Robotics Software or Autonomy.
+M.Eng. ECE student at Oregon State University focused on robotics software: reinforcement learning, control, and multi-drone autonomy. Built a drone-swarm collision-avoidance system in C++ at ITRI (ROS 2, PX4), from Gazebo simulation to a 10-drone flight test. Seeking a Summer 2027 internship in Robotics Software or Autonomy.
 
 - 🎓 **Now**: Master of Engineering in Electrical and Computer Engineering, **Oregon State University** (Sep 2026 - Expected Mar 2028)
 - 🎓 Bachelor of Science in Green Energy and Information Technology, **National Taitung University** (Sep 2020 - Jun 2024) · GPA: 3.3/4.0 | Graduated with College Student Research Scholarship
@@ -41,10 +41,10 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
-- Owned the collision-avoidance system for a centralized drone swarm (ROS 2, PX4), designing a new APF-based algorithm that avoids collisions without breaking formation.
-- Validated with red/green A/B tests in Gazebo PX4 SITL with up to 10 drones: head-on and crossing drones kept ≥5.4 m apart vs. as close as 0.04 m with avoidance off. In a 50-drone offline closed-loop harness, the planner used <1% of the 20 ms control budget. At that scale, communication was the bottleneck, not compute.
-- In a 10-drone physical flight test, the other drones steered around two that dropped into failsafe hover on sensor faults.
-- Set up the Claude Code workflow for the swarm repo. A skeptic subagent must try to refute every root-cause claim before a fix ships, and a hook asks for confirmation before destructive git or rm commands when another session has uncommitted work.
+- Built the **collision-avoidance system** for a centralized drone swarm **in C++** (ROS 2, PX4). It uses a new APF-based algorithm that avoids collisions without breaking formation.
+- Validated with red/green A/B tests in Gazebo PX4 SITL with up to 10 drones: head-on and crossing drones kept **≥5.4 m** apart vs. as close as 0.04 m with avoidance off. In a 50-drone offline closed-loop harness, the planner used **<1%** of the 20 ms control budget. At that scale, communication was the bottleneck, not compute.
+- In a **10-drone physical flight test**, the other drones steered around two that dropped into failsafe hover on sensor faults.
+- Set up Claude Code (an AI coding assistant) for the swarm repo. A second AI reviewer (a skeptic subagent) must try to refute each major root-cause claim before a fix ships, and a hook asks for confirmation before destructive git or rm commands when the working directory has uncommitted changes.
 
 ### 🏫 Republic of China (Taiwan) Army | 
 **Mandatory Military Service** _(Jan 2025 - Apr 2025)_
@@ -75,7 +75,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ### 🚁 Vision-DPPO
 > Visuomotor Quadrotor Hover via Flow Matching (Sim)
 
-Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-order motor lag) and a synthetic, domain-randomized 64×64 FPV renderer, then recorded HDF5 demonstrations from a state-based PPO expert and a PID teacher. Trained a 13.5M-parameter flow-matching policy by imitation. It maps 2 FPV frames, IMU and a mode flag to 50 Hz thrust/body-rate commands for a 200 Hz INDI inner loop (CNN encoder, IMU-to-vision cross-attention, 1D U-Net). Found my old RMSE metric rewarded early crashes by averaging only over steps flown. Built a frozen eval harness (paired starts, survival-conditioned error, bootstrap CIs, measured oracle) that exposed my prior best gains as artifacts. Ran 3-seed ablations with it: a Dispersive Loss rebuilt from its authors' code gave no pass-rate gain (−2.2 pp, pooled seed std 6.3 pp). Better sensing, far-range demos and 3.3× capacity each left hover error ~2.4–3.0 m vs a 0.07 m oracle.
+Built a **6-DOF quadrotor simulator** (quaternion attitude, RK4 at 200 Hz, first-order motor lag) and a synthetic, domain-randomized 64×64 FPV renderer, then recorded HDF5 demonstrations from a state-based PPO expert and a PID teacher. Trained a **13.5M-parameter flow-matching policy** by imitation. It maps 2 FPV frames, IMU and a mode flag to 50 Hz thrust/body-rate commands for a 200 Hz INDI inner loop (CNN encoder, IMU-to-vision cross-attention, 1D U-Net). Found my old RMSE metric rewarded early crashes by averaging only over steps flown. Built a **frozen eval harness** (paired starts, survival-conditioned error, bootstrap CIs, measured oracle) that exposed my prior best gains as artifacts. Ran 3-seed ablations with it: a Dispersive Loss rebuilt from its authors' code gave **no pass-rate gain** (−2.2 pp, pooled seed std 6.3 pp). Better sensing, far-range demos and 3.3× capacity each left hover error ~2.4–3.0 m vs a 0.07 m oracle.
 
 - 🛠️ **Tech Stack**: PyTorch, PPO
 - 🗓️ **Timeline**: Feb 2026 - Jun 2026
@@ -83,9 +83,10 @@ Built a 6-DOF quadrotor simulator (quaternion attitude, RK4 at 200 Hz, first-ord
 
 ### 🏭 Factory ERP System
 
-Built and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system only the owner could operate, so new staff can run daily operations, with 5 shop-floor display stations. Rebuilt the order-to-shipment workflow around orders after the product-first data model clashed with how the factory runs: approving an order now creates the work order and purchase drafts for missing materials when stock is short. Wrote 14 idempotent import commands, each with a dry-run mode, to migrate 31 legacy databases (~690K source rows). Implemented a pricing engine that combines product specs with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints. Specified an AI assistant for the ERP that runs on a local Qwen 2.5-14B model (Ollama) or the Gemini API. Staff ask in chat for a product's or an order's details, so a customer's call gets a quick answer. Defined the tools the assistant may call, such as drafting purchase orders. Anything that writes data waits for a person to approve it.
+Designed and deployed a full-stack ERP on Docker to replace a manufacturer's MS Access system only the owner could operate, so new staff can run daily operations, with 5 shop-floor display stations. Rebuilt the order-to-shipment workflow around orders after the product-first data model clashed with how the factory runs: approving an order now creates the work order and purchase drafts for missing materials when stock is short. Wrote 14 idempotent import commands, each with a dry-run mode, to migrate 31 legacy databases (~690K source rows). Implemented a pricing engine that combines product specs with material cost multipliers using margin-preserving formulas, exposed through DRF endpoints. Designed an AI chat assistant for the ERP: its prompts and about 70 tools. Staff ask in chat for a product's or an order's details, so a customer's call gets a quick answer. Anything that writes data waits for a person to approve it. Designed a reader that pulls order fields from customers' PDF purchase orders. Both features run on one local Qwen 2.5-14B, with Gemini as backup. On 5 real POs, 14B found the customer every time. 7B once put our own company there.
 
 - 🛠️ **Tech Stack**: Django REST Framework, React, JavaScript, PostgreSQL
+- 🗓️ **Timeline**: 2023 - Present
 - 🚩 **Status**: Deployed (Rolling Out)
 
 ### 🔧 NoteHub
@@ -134,8 +135,8 @@ Designed a 6-tool MCP server so Claude Desktop can search and read notes via the
 
 ### Domains of Expertise
 - 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, Visual-Inertial Odometry (VIO), Swarm Collision Avoidance (APF), Flight Testing, PX4 ULog Analysis
-- 🔧 **AI Engineering** - LLM Integration (Ollama, Qwen 2.5, Gemini API), Tool Calling with Human Approval, MCP Servers, Claude Code (Skills, Subagents, Hooks), Evaluation Harness Design
-- 🤖 **AI / ML** - Reinforcement Learning (PPO), Imitation Learning (Diffusion / Flow Matching), PyTorch, Actor-Critic, PSO / GA (metaheuristics)
+- 🔧 **AI Engineering** - LLM Integration (Local Qwen 2.5 on llama.cpp, Gemini API), Prompt Engineering, Tool Calling with Human Approval, MCP Servers, Claude Code (Skills, Subagents, Hooks), Evaluation Harness Design
+- 🤖 **AI / ML** - Reinforcement Learning (PPO), Diffusion Policy / Flow Matching, Hyperparameter Tuning, PyTorch, Actor-Critic, PSO / GA (metaheuristics)
 - 🔧 **Software** - C++, C, Python, JavaScript, MATLAB, SQL (PostgreSQL), Git, Linux, Docker, Django, React, Flutter
 
 ## 📚 Publications
