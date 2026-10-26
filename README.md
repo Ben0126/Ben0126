@@ -41,7 +41,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 
 ### 🚁 Industrial Technology Research Institute (ITRI) | Information and Communications Research Laboratories
 **Robotics Software Engineering Intern** _(Jul 2026 - Aug 2026)_
-- Built the **collision-avoidance system** for a centralized drone swarm **in C++** (ROS 2, PX4). It uses a new APF-based algorithm that avoids collisions without breaking formation.
+- Built a **multi-robot collision-avoidance planner in C++** (ROS 2, PX4) for a centralized drone swarm. It uses a new APF-based algorithm that avoids collisions without breaking formation.
 - Validated with A/B tests in Gazebo PX4 SITL with up to 10 drones: head-on and crossing drones kept **≥5.4 m** apart vs. as close as 0.04 m with avoidance off. In a 50-drone offline closed-loop harness, the planner used **<1%** of the 20 ms control budget. At that scale, communication was the bottleneck, not compute.
 - In a **10-drone physical flight test**, the other drones steered around two that dropped into failsafe hover on sensor faults.
 - Set up the Claude Code AI coding assistant for the swarm repo. A skeptic subagent must try to refute each major root-cause claim before a fix ships. A hook asks to confirm destructive git or rm commands if changes are uncommitted.
@@ -73,7 +73,7 @@ M.Eng. ECE student at Oregon State University focused on robotics software: rein
 ## 🔭 Projects
 
 ### 🚁 Vision-DPPO
-> Visuomotor Quadrotor Hover via Flow Matching (Sim)
+> Flow-Matching Visuomotor Policy (Quadrotor Hover, Sim)
 
 Built a **6-DOF quadrotor simulator** (quaternion attitude, RK4 at 200 Hz, first-order motor lag) and a synthetic, domain-randomized 64×64 FPV renderer, then recorded HDF5 demonstrations from a state-based PPO expert and a PID teacher. Trained a **13.5M-parameter flow-matching policy** by imitation. It maps 2 FPV frames, IMU and a mode flag to 50 Hz thrust/body-rate commands for a 200 Hz INDI inner loop (CNN encoder, IMU-to-vision cross-attention, 1D U-Net). Found my old RMSE metric rewarded early crashes by averaging only over steps flown. Built a **frozen eval harness** (paired starts, survival-conditioned error, bootstrap CIs, measured oracle), so a policy can no longer look better by crashing sooner. Ran 3-seed ablations with it: a Dispersive Loss adapted from the paper and its authors' code to my flow-matching policy gave **no pass-rate gain** (−2.2 pp, pooled seed std 6.3 pp). Better sensing, far-range demos and 3.3× capacity each left hover error ~2.4–3.0 m vs a 0.07 m oracle.
 
@@ -134,7 +134,7 @@ Designed a 6-tool MCP server so Claude Desktop can search and read notes via the
 </div>
 
 ### Domains of Expertise
-- 🚁 **Robotics** - ROS 2 / ROS, PX4, Gazebo SITL, VIO, Swarm Collision Avoidance (APF), Flight Testing, ULog Analysis
+- 🚁 **Robotics** - ROS 2 / ROS, Multi-Robot Collision Avoidance, Gazebo SITL, VIO, PX4, Flight Testing, ULog Analysis
 - 🔧 **AI Engineering** - LLM Integration (Local Qwen 2.5 on llama.cpp, Gemini API), Prompt Engineering, Tool Calling with Human Approval, MCP Servers, Claude Code (Skills, Subagents, Hooks), Evaluation Harness Design
 - 🤖 **AI / ML** - Reinforcement Learning (PPO), Diffusion Policy / Flow Matching, Hyperparameter Tuning, PyTorch, Actor-Critic, PSO / GA (metaheuristics)
 - 🔧 **Software** - C++, C, Python, JavaScript, MATLAB, SQL (PostgreSQL), Git, Linux, Docker, Django, React, Flutter

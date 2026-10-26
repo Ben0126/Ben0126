@@ -133,7 +133,7 @@
 </div>
 
 ### 專業領域
-- 🚁 **機器人** - ROS 2 / ROS、PX4、Gazebo SITL、視覺慣性里程計 (VIO)、群體避碰 (APF)、飛行測試、PX4 ULog 飛行日誌分析
+- 🚁 **機器人** - ROS 2 / ROS、多機器人避碰 (APF)、Gazebo SITL、視覺慣性里程計 (VIO)、PX4、飛行測試、PX4 ULog 飛行日誌分析
 - 🔧 **AI 工程** - LLM 整合 (本機 Qwen 2.5 / llama.cpp、Gemini API)、Prompt 工程、工具呼叫與人工核准、MCP 伺服器、Claude Code (Skills、Subagents、Hooks)、評估協議設計
 - 🤖 **AI / 機器學習** - 強化學習 (PPO)、Diffusion Policy / Flow Matching、超參數調校、PyTorch、Actor-Critic、PSO / GA (metaheuristics)
 - 🔧 **軟體** - C++、C、Python、JavaScript、MATLAB、SQL (PostgreSQL)、Git、Linux、Docker、Django、React、Flutter
